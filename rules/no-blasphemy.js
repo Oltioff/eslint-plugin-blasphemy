@@ -27,7 +27,7 @@ const getNormalizedWord = (word) => {
     }
     return word;
 };
-const rule = {
+module.exports = {
     meta: {
         type: "problem",
         docs: {
@@ -52,5 +52,3 @@ const rule = {
         };
     }
 };
-
-export default rule;

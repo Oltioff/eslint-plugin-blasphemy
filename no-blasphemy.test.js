@@ -1,5 +1,5 @@
-import { RuleTester } from "eslint";
-import rule from "./rules/no-blasphemy.js"
+const { RuleTester } = require("eslint");
+const rule = require("./rules/no-blasphemy.js");
 
 const ruleTester = new RuleTester({
   // Must use at least ecmaVersion 2015 because
