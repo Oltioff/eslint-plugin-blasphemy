@@ -1,0 +1,24 @@
+{
+  "name": "eslint-plugin-blasphemy",
+  "version": "1.0.4",
+  "scripts": {
+    "test": "node no-blasphemy.test.js"
+  },
+  "type": "module",
+  "description": "ESLint plugin to prevent blasphemy",
+  "author": "Oltion Abazi (oltion.dev)",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "devDependencies": {
+    "eslint": "^9.22.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
+  "main": "plugin.js",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "blasphemy"
+  ]
+}
