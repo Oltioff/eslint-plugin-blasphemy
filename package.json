@@ -14,6 +14,7 @@
   "peerDependencies": {
     "eslint": ">=9.0.0"
   },
+  "types": "index.d.ts",
   "main": "plugin.js",
   "keywords": [
     "eslint",
