@@ -13,12 +13,22 @@ ruleTester.run(
   rule, // rule code
   { // checks
     // 'valid' checks cases that should pass
-    valid: [{
-      code: "const foo = 'bar';",
-    },
-        {
+    valid: [
+      {
+        code: "const foo = 'bar';",
+      },
+      {
         code: "console.log('m4donn');",
-        }
+      },
+      {
+        code: "const foo = 'odio';",
+      },
+      {
+        code: "const foo = 'audio';",
+      },
+      {
+        code: "const foo = 'radiografia';",
+      }
     ],
     // 'invalid' checks cases that should not pass
     invalid: [{
@@ -27,6 +37,22 @@ ruleTester.run(
     },
     {
       code: "console.log('m4donna');",
+      errors: [{ message: "Blasphemy is not allowed." }],
+    },
+    {
+      code: "const foo = 'gèsù';",
+      errors: [{ message: "Blasphemy is not allowed." }],
+    },
+    {
+      code: "const foo = 'cr1st0';",
+      errors: [{ message: "Blasphemy is not allowed." }],
+    },
+    {
+      code: "const foo = 'd.i.o';",
+      errors: [{ message: "Blasphemy is not allowed." }],
+    },
+    {
+      code: "const foo = 'm a d o n n a';",
       errors: [{ message: "Blasphemy is not allowed." }],
     }
     ],
